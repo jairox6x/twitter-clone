@@ -18,9 +18,9 @@
             </g>
         </svg>
     </div>
-    <ul class="bg-gray-100 rounded-lg px-4">
+    <div class="bg-gray-100 rounded-lg">
         @foreach(range(1, 4) as $user)
-            <li class="text-sm border-b py-2">
+            <div class="text-sm border-b py-2 w-full hover:bg-gray-200 px-4">
                 <div class="flex justify-between items-center ">
                     <span class="text-xs text-gray-600">Trending in Dominican Republic</span>
                     <svg viewBox="0 0 24 24" class="w-3 h-3 fill-current text-gray-600">
@@ -33,17 +33,17 @@
                     <span class="font-black">{{random_name()}}</span>
                     <span class="text-gray-600 block">{{random_int(2.00, 90.00)}}K Tweets </span>
                 </div>
-            </li>
+            </div>
         @endforeach
-    </ul>
+    </div>
 
 
     <div class="flex justify-between px-4 bg-gray-100 pt-4 rounded-t-lg border-b mt-6 ">
         <h3 class="font-black mb-2">Who to Follow</h3>
     </div>
-    <ul class="bg-gray-100 rounded-lg px-4">
+    <div class="bg-gray-100 rounded-lg">
         @foreach(range(1, 4) as $user)
-            <li class="text-sm border-b py-2 flex justify-between items-center">
+            <div class="text-sm border-b py-2 flex justify-between items-center hover:bg-gray-200 px-4">
                 <div class="recommended-tweet flex">
                     <img src="{{random_avatar()}}" alt="follow_recommendation" class="w-10 h-10 rounded-full mr-2">
                     <div class="block">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <button class="rounded-full px-4 py-1 h-8 border border-green-600 font-bold text-green-500 hover:bg-green-100">Follow</button>
-            </li>
+            </div>
         @endforeach
-    </ul>
+    </div>
 </div>
