@@ -595,6 +595,11 @@ video {
   height: auto;
 }
 
+.search-bar-icon {
+  top: 12px;
+  left: 8px;
+}
+
 .container {
   width: 100%;
 }

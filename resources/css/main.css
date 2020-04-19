@@ -1,5 +1,10 @@
 @tailwind base;
 
+.search-bar-icon {
+    top: 12px;
+    left: 8px;
+}
+
 @tailwind components;
 
 @tailwind utilities;

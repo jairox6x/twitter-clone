@@ -6,6 +6,14 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+/*
+ * @method string getAvatarAttribute
+ *
+ * */
+/**
+ * Class User
+ * @package App
+ */
 class User extends Authenticatable
 {
     use Notifiable;
@@ -40,7 +48,7 @@ class User extends Authenticatable
 
     public function timeline()
     {
-        return Tweet::query()->where('user_id', $this->id)->latest()->get();
+        return Tweet::query()->with('user')->where('user_id', $this->id)->latest()->get();
     }
 
     /**

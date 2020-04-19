@@ -20,14 +20,7 @@
     <link href="{{ asset('css/main.css') }}" rel="stylesheet">
 </head>
 <body class="font-sans">
-    <div id="app" class="my-4">
-        <section class="px-8">
-            <header class="container mx-auto">
-                <h1 class="flex">
-                    <img src="{{asset('images/svg/twitter.svg')}}" class="w-10" alt="tweet">
-                </h1>
-            </header>
-        </section>
+    <div id="app" class="my-0">
         <section class="px-8">
             <main class="container mx-auto">
                 @yield('content')

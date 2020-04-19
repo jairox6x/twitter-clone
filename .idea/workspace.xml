@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8bc8b38-bb58-4ba5-a7ae-319c0df45040" name="Default Changelist" comment="" />
+    <list default="true" id="f8bc8b38-bb58-4ba5-a7ae-319c0df45040" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e3fd83ce-17e3-4a62-9b34-790628022184.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e3fd83ce-17e3-4a62-9b34-790628022184.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/TweetFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/TweetFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/svg/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/svg/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/friend_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/friend_list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/main_content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/main_content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/sidebar_links.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/sidebar_links.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/tweet-box-decoration.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/tweet-box-decoration.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/tweet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/tweet.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/tweetbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/tweetbox.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +61,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
@@ -145,6 +167,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1abjT4UznzSHmfzr9vfsUBi1WIM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -153,6 +176,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/svg" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -180,7 +204,8 @@
       <option name="presentableId" value="Default" />
       <updated>1587011191113</updated>
       <workItem from="1587011193113" duration="5366000" />
-      <workItem from="1587066893951" duration="11526000" />
+      <workItem from="1587066893951" duration="15797000" />
+      <workItem from="1587260378819" duration="21783000" />
     </task>
     <servers />
   </component>
@@ -212,13 +237,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="461" y="168" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1587014830415" />
+    <state x="715" y="370" key="cloudConfig.PluginsDialog" timestamp="1587318153471">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="715" y="370" key="cloudConfig.PluginsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1587318153471" />
+    <state x="656" y="257" width="607" height="536" key="find.popup" timestamp="1587320565849">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="257" width="607" height="536" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587320565849" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1587013532467">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587013532467" />
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1587092608606">
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1587320545587">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587092608606" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1587320545587" />
   </component>
 </project>
