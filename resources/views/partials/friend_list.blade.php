@@ -20,7 +20,7 @@
     </div>
     <div class="bg-gray-100 rounded-lg">
         @foreach(range(1, 4) as $user)
-            <div class="text-sm border-b py-2 w-full hover:bg-gray-200 px-4">
+            <div class="text-sm border-b py-2 w-full hover:bg-gray-200 px-4 cursor-pointer">
                 <div class="flex justify-between items-center ">
                     <span class="text-xs text-gray-600">Trending in Dominican Republic</span>
                     <svg viewBox="0 0 24 24" class="w-3 h-3 fill-current text-gray-600">
@@ -42,12 +42,12 @@
         <h3 class="font-black mb-2">Who to Follow</h3>
     </div>
     <div class="bg-gray-100 rounded-lg">
-        @foreach(range(1, 4) as $user)
-            <div class="text-sm border-b py-2 flex justify-between items-center hover:bg-gray-200 px-4">
+        @foreach(auth()->user()->follows as $user)
+            <div class="text-sm border-b py-2 flex justify-between items-center hover:bg-gray-200 px-4 cursor-pointer">
                 <div class="recommended-tweet flex">
-                    <img src="{{random_avatar()}}" alt="follow_recommendation" class="w-10 h-10 rounded-full mr-2">
+                    <img src="{{$user->avatar}}" alt="follow_recommendation" class="w-10 h-10 rounded-full mr-2">
                     <div class="block">
-                        <span class="font-black">{{random_name()}}</span>
+                        <span class="font-black">{{$user->name}}</span>
                         <span class="text-gray-600 block"><span>@</span>{{random_name()}}</span>
                     </div>
                 </div>

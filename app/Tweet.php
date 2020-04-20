@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Tweet extends Model
 {
+    protected $fillable = ['user_id', 'body'];
+
     /**
      * Fetch the relation between a tweet and a user.
      * @return BelongsTo

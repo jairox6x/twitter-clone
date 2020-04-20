@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -10,6 +12,7 @@ use Illuminate\Notifications\Notifiable;
  * @method string getAvatarAttribute
  *
  * */
+
 /**
  * Class User
  * @package App
@@ -48,7 +51,36 @@ class User extends Authenticatable
 
     public function timeline()
     {
-        return Tweet::query()->with('user')->where('user_id', $this->id)->latest()->get();
+        $ids = $this->follows()->pluck('id');
+        $ids = $ids->push($this->attributes['id']);
+
+        return Tweet::with('user')->whereIn('user_id', $ids)->latest()->get();
+    }
+
+
+    public function tweets()
+    {
+        return $this->hasMany(Tweet::class);
+    }
+
+
+    /**
+     * Allows to follow another user.
+     * @param User $user
+     * @return Model
+     */
+    public function follow(User $user): Model
+    {
+        return $this->follows()->save($user);
+    }
+
+
+    /**
+     * @return BelongsToMany
+     */
+    public function follows(): BelongsToMany
+    {
+        return $this->belongsToMany(__CLASS__, 'follows', 'user_id', 'following_user_id');
     }
 
     /**
@@ -59,4 +91,6 @@ class User extends Authenticatable
     {
         return sprintf('https://i.pravatar.cc/50?u=%s', $this->attributes['email']);
     }
+
+
 }

@@ -6,7 +6,7 @@
             <div class="flex-shrink-0">
                 <img class="rounded-full mr-2" src="{{auth()->user()->avatar}}" alt="">
             </div>
-            <textarea name="body" class="resize-none placeholder-gray-500 text-lg w-full outline-none pt-4  rounded-lg"
+            <textarea name="body" required class="resize-none placeholder-gray-500 text-lg w-full outline-none pt-4  rounded-lg"
                       placeholder="What's happening?"></textarea>
         </div>
         @include('partials.tweet-box-decoration')
