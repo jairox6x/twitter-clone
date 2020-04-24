@@ -12,7 +12,7 @@
 <div class="w-full bg-white border-b border-gray-400 sticky top-0">
     <div class="container mx-auto py-2 md:px-32">
         <nav class="flex justify-between items-center px-4">
-            <img alt="Instagram"  src="{{asset('images/instalogo.png')}}" srcset="{{asset('images/instalogo-2x.png')}} 2x">
+            <img alt="Instagram" src="{{asset('images/instalogo.png')}}" srcset="{{asset('images/instalogo-2x.png')}} 2x">
 
             <div class="search hidden md:block">
                 <div class="w-1/2">

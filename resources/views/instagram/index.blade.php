@@ -3,7 +3,25 @@
 
 @section('content')
 
+    <div class="border border-gray-300 mb-6 -mt-6 rounded-md py-4">
+        <div class="h-20 overflow-y-hidden">
+            <div class="w-auto flex" style="overflow: hidden">
+
+                @foreach(range(1,10) as $story)
+                    <a href="#" class="block ml-6 flex flex-col justify-content-around">
+                        <div>
+                            <img src="{{random_avatar(80)}}" class="rounded-full" alt="story-avatar">
+                        </div>
+                        <div class="ml-2">
+                            <div class="text-2xs text-gray-500">{{random_name()}}</div>
+                        </div>
+                    </a>
+                @endforeach
+            </div>
+        </div>
+    </div>
     <div class="md:flex md:justify-center">
+
 
         <section class="feed mb-8" style="max-width: 614px">
             @foreach($photos as $post)
