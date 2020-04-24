@@ -16,6 +16,13 @@ if (!function_exists('random_name')) {
     }
 }
 
+if (!function_exists('random_words')) {
+    function random_words($length = 6)
+    {
+        return Faker\Factory::create()->sentence($length);
+    }
+}
+
 if (!function_exists('random_avatar')) {
     function random_avatar(int $size = 50, $id = null): string
     {
