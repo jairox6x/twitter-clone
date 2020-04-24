@@ -3,7 +3,7 @@
 
 @section('content')
 
-    <div class="border border-gray-300 mb-6 -mt-6 rounded-md py-4">
+    <div class="stories lg:hidden border-gray-300 mb-6 -mt-6 rounded-md py-4">
         <div class="h-20 overflow-y-hidden">
             <div class="w-auto flex" style="overflow: hidden">
 
@@ -70,14 +70,14 @@
             </div>
 
             <div class="suggestions-container bg-white mt-6 border border-gray-300 rounded-t-lg rounded-bl-lg mt-4">
-                <section class="pl-4 pt-4 pt-2">
-                    <header class="flex justify-between items-center mb-4 pr-4">
+                <section class="p-4">
+                    <header class="flex justify-between items-center mb-4">
                         <div class="font-bold text-sm text-gray-500">Sugerencias para ti</div>
                         <div class="text-gray-800 font-bold text-xs">Ver todo</div>
                     </header>
                     <div class="story-feed">
                         @foreach(range(1,4) as $stories)
-                            <div class="flex py-2">
+                            <div class="flex py-2 justify-between items-center">
                                 <a href="#" class="flex">
                                     <div>
                                         <img src="{{random_avatar(30)}}" class="rounded-full" alt="story-avatar">
@@ -87,6 +87,7 @@
                                         <div class="text-xs  text-gray-600">Te sigue</div>
                                     </div>
                                 </a>
+                                <button class="text-blue-600 font-semibold text-xs focus:outline-none">Seguir</button>
                             </div>
                         @endforeach
                     </div>
