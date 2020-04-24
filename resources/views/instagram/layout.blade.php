@@ -14,7 +14,7 @@
         <nav class="flex justify-between items-center px-4">
             <img alt="Instagram"  src="{{asset('images/instalogo.png')}}" srcset="{{asset('images/instalogo-2x.png')}} 2x">
 
-            <div class="search invisible md:visible">
+            <div class="search hidden md:block">
                 <div class="w-1/2">
                     <input type="text" autocomplete="off" placeholder="Search"
                            class="focus:outline-none font-light text-gray-700 bg-gray-200 border border-gray-400 rounded-sm px-3 text-sm py-1">
@@ -46,7 +46,7 @@
                               fill-rule="evenodd"></path>
                     </svg>
                 </a>
-                <a href="#" class="md:ml-5">
+                <a href="#" class="ml-2 md:ml-5">
                     <img src="{{random_avatar(24, 'james')}}" class="rounded-full" alt="">
                 </a>
             </div>
@@ -55,7 +55,7 @@
 </div>
 
 <div class="content">
-    <main class="container mx-auto mt-6 md:px-32">
+    <main class="container mx-auto mt-6 lg:px-32">
 
         @yield('content')
 
