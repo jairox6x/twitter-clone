@@ -1,4 +1,4 @@
-<article class="flex-col border border-gray-400 rounded-sm mb-10">
+<article class="flex-col border border-gray-400 rounded-sm mb-10 min-w-full">
     <header class="border flex justify-between px-3 py-2">
         <div class="user-info flex">
             <img src="{{random_avatar(50)}}" class="rounded-full" alt="user-avatar">
