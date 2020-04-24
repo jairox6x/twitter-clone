@@ -25,8 +25,6 @@ Route::middleware('auth')->group(static function () {
 });
 
 
-Route::get('instagram', static function(){
-    return view('instagram.index');
-});
+Route::get('instagram', 'InstagramController@index');
 
 Auth::routes();
