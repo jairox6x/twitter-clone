@@ -26,6 +26,6 @@
             </g>
         </svg>
     </div>
-    <button type="submit" class="shadow-lg bg-green-500 focus:outline-none focus:shadow-outline shadow px-4 py-2 text-white font-bold rounded-full hover:bg-green-600 transition ease-in-out
-    duration-75">Tweet</button>
+    <button type="submit" class="shadow-lg bg-green-500 focus:outline-none focus:shadow-outline shadow px-4 py-2 text-white font-bold rounded-full hover:bg-green-600 transition
+    ease-in-out duration-75">Tweet</button>
 </footer>

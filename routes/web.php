@@ -15,10 +15,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', static function () {
-    return view('welcome');
+    return redirect('tweets');
+});
+
+
+Route::middleware('auth')->group(static function () {
+    Route::get('/tweets', 'TweetController@index')->name('home');
+    Route::post('tweet', 'TweetController@store')->name('tweet.store');
+});
+
+
+Route::get('instagram', static function(){
+    return view('instagram.index');
 });
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-Route::post('tweet', 'TweetController@store')->name('tweet.store');

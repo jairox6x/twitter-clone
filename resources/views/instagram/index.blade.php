@@ -1,0 +1,3 @@
+@extends('instagram.layout')
+
+

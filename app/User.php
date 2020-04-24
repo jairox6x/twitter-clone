@@ -3,15 +3,15 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-/*
- * @method string getAvatarAttribute
- *
- * */
+
 
 /**
  * Class User
@@ -49,16 +49,25 @@ class User extends Authenticatable
     ];
 
 
+    /**
+     * @return Builder[]|Collection
+     */
     public function timeline()
     {
-        $ids = $this->follows()->pluck('id');
-        $ids = $ids->push($this->attributes['id']);
+        $friends = $this->follows()->pluck('id');
 
-        return Tweet::with('user')->whereIn('user_id', $ids)->latest()->get();
+        return Tweet::with('user')
+            ->whereIn('user_id', $friends)
+            ->orWhere('user_id', $this->id)
+            ->latest()
+            ->get();
     }
 
 
-    public function tweets()
+    /**
+     * @return HasMany
+     */
+    public function tweets(): HasMany
     {
         return $this->hasMany(Tweet::class);
     }

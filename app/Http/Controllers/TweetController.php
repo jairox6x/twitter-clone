@@ -4,11 +4,25 @@ namespace App\Http\Controllers;
 
 use App\Tweet;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Redirector;
 
 class TweetController extends Controller
 {
+
+
+    /**
+     * TweetController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
+    public function index()
+    {
+        return view('home', ['tweets' => optional(auth()->user())->timeline() ?? []]);
+
+    }
 
 
     /**

@@ -600,6 +600,11 @@ video {
   left: 8px;
 }
 
+.gradient-circular {
+  -o-border-image: conic-gradient(red, #ffc029, #ff4130, #ff2ac9, blue, magenta, red) 1;
+     border-image: conic-gradient(red, #ffc029, #ff4130, #ff2ac9, blue, magenta, red) 1;
+}
+
 .container {
   width: 100%;
 }
