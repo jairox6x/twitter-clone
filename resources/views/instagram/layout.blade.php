@@ -60,18 +60,7 @@
 <div class="content">
     <main class="container mx-auto mt-6 px-32">
 
-        <div class="flex">
-            <section class="feed flex-1 md:w-2/3 mb-8">
-                @foreach($photos as $post)
-                    @include('instagram.partials.post', ['post' => $post])
-                @endforeach
-            </section>
-
-            <section class="information md:block md:w-1/3">
-                Information
-            </section>
-
-        </div>
+        @yield('content')
 
     </main>
 </div>
